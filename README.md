@@ -1,21 +1,19 @@
-# Quiz App (ASP.NET Api + ReactTS project).
-An app where users can create and share quizzes with other users.
+# Quiz App
+Quiz App is a web application that allows users to create, share, and explore quizzes. Key features include secure user authentication, caching for performance, user profiles with images, an intuitive quiz builder, search functionality, results tracking, and a quiz rating system.
 
-### Features:
-- authorization (JWT-Token)
-- entry-point caching (Redis)
-- user profile and image
-- quiz creation (with builder)
-- search
-- quiz results list
+### Front-end
+- Framework: React with TypeScript
+- UI Library: Bootstrap 5
+- Handles user interactions and communicates with the backend API
 
-- quiz rates
+### Back-end
+- Framework: ASP.NET Core API
+- Handles authentication, authorisation, and client requests
+- Databases Used:
+  - MongoDB: Stores profiles, images, and quizzes
+  - PostgreSQL: Stores user credentials, results, and ratings
+  - Redis: Used for caching to improve performance
 
-### Databases
-- for profiles, images and quizzes -> MongoDB
-- for users' credentials -> PostgreSQL
-- for quiz results and rates -> PostgreSQL
-- cache -> Redis 
 ### UI (ReactTS)
 ![photo_2024-08-17_15-07-21](https://github.com/user-attachments/assets/328e8280-dc57-4147-936d-7fc732c36bf2)
 
@@ -31,4 +29,3 @@ An app where users can create and share quizzes with other users.
 
 ![photo_2024-08-17_15-17-42](https://github.com/user-attachments/assets/6de8219a-c2bc-499e-ba36-f00fbabcf03b)
 
-*(project created for study purposes)*
